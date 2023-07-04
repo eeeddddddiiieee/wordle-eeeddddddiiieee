@@ -1,7 +1,5 @@
 # Wordle
 
-Your task is to implement a [Wordle](https://www.nytimes.com/games/wordle/index.html) player by writing code in `solver.py`. Feel free to try out your ideas and experiment, but remember to do so robustly and measure the effects of your changes. Using [`benchmark.py`](./benchmark.py)
-
 ## Basic structure.
 
 There are three key files you can run, `wordle.py`, `solver.py` and `benchmark.py`.
@@ -19,7 +17,7 @@ Running `python3 solver.py` runs your solver against the code. At first it will 
 
 ### `benchmark.py`
 
-Running `python3 benchmark.py` generates 1000 random wordle games and uses your solver implementation to play the game. After running the 1000 simulations, it produces a PDF file `solver_data.pdf`, which depicts a histogram of your solver's performance. The horizontal axis is the number of guesses and the vertical axis is the proportion of wordle games that were solved in that number of guesses.
+Running `python3 benchmark.py` generates 1000 random wordle games and uses the solver implementation to play the game. After running the 1000 simulations, it produces a PDF file `solver_data.pdf`, which depicts a histogram of your solver's performance. The horizontal axis is the number of guesses and the vertical axis is the proportion of wordle games that were solved in that number of guesses.
 
 **WARNING**. At the start this will never terminate because solver always makes the same guess.
 
